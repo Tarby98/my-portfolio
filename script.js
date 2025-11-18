@@ -100,3 +100,21 @@ window.addEventListener('scroll', () => {
       name.style.transform = 'scale(1)';
     }, 200);
   });
+
+ // FADE IN ANIMATIONS WHEN SCROLLING DOWN //
+
+  const faders = document.querySelectorAll('.fade-in');
+
+const observer = new IntersectionObserver(
+  (entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.2 }
+);
+
+faders.forEach(el => observer.observe(el));
