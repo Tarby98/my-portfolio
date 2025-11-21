@@ -241,13 +241,15 @@ h1 {
   transform: translateY(-6px);
 }
 
-.skill i,
-.skill img {
-  width: 65px;
-  height: 65px;
+.skill img,
+.skill i {
+  width: 65px;      
+  height: 65px;      
   object-fit: contain;
   display: block;
   margin: 0 auto;
+  min-width: 0;     
+  min-height: 0;  
 }
 
 .icon-img {
@@ -277,9 +279,14 @@ h1 {
 
 @media (max-width: 600px) {
   .skill {
-    font-size: 45px; 
+    font-size: 40px; 
   }
-   
+
+   .skill img {
+    width: 45px;
+    height: 45px;
+  }
+
   .tooltip {
     opacity: 1 !important;
     position: static;
@@ -289,6 +296,8 @@ h1 {
     padding: 0;
     margin-top: 8px;
     font-size: 14px;
+    white-space: normal;
+    text-align: center;
   }
 }
 
@@ -925,6 +934,7 @@ footer .copyright {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 
 
