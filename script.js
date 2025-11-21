@@ -56,7 +56,7 @@ document.querySelectorAll('.project-slideshow').forEach(slideshow => {
 
 // MAKE THE TAGLINE TYPE OUT //
 
-const text = '"Aspiring to become a Full Stack Developer"';
+const text = '"Aspiring to become a Front-End Developer"';
 let i = 0;
 const tagline = document.querySelector('.tagline');
 function type() {
@@ -100,5 +100,6 @@ window.addEventListener('scroll', () => {
       name.style.transform = 'scale(1)';
     }, 200);
   });
+
 
 
