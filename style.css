@@ -279,6 +279,7 @@ h1 {
   .skill {
     font-size: 45px; 
   }
+   
   .tooltip {
     opacity: 1 !important;
     position: static;
@@ -290,17 +291,6 @@ h1 {
     font-size: 14px;
   }
 }
-
-  .tooltip {
-    font-size: 14px;
-    padding: 4px 8px;
-    bottom: -28px;
-    max-width: 120px;
-    white-space: normal;
-    text-align: center;
-  }
-}
-
 
 /* ==============================
    MAIN PROJECTS
@@ -935,5 +925,6 @@ footer .copyright {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 
