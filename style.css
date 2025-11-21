@@ -2,10 +2,6 @@
    CSS FOR PORTFOLIO
    ============================== */
 
-html {
-  scroll-behavior: smooth;
-}
-
 html, body {
   margin: 0;
   padding: 0;
@@ -899,6 +895,19 @@ footer .copyright {
   }
 }
 
+@supports (-webkit-overflow-scrolling: touch) {
+  body {
+    animation: none;
+    background: linear-gradient(#E0E7FF, #F9FAFB);
+  }
+}
+
+@media (min-width: 769px) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
 /* ==============================
    EASTER EGGS
    ============================== */
@@ -940,6 +949,7 @@ footer .copyright {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 
 
