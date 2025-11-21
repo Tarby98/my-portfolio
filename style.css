@@ -13,6 +13,8 @@ body {
   background: linear-gradient(-45deg, #E0E7FF, #EEF2FF, #F9FAFB, #E0E7FF);
   background-size: 400% 400%;
   animation: gradientShift 12s ease infinite;
+  will-change: background-position;
+  backface-visibility: hidden; 
 }
 
 @keyframes gradientShift {
@@ -896,6 +898,9 @@ footer .copyright {
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
+  header {
+    backdrop-filter: blur(4px); /* reduce blur for Safari */
+  }
   body {
     animation: none;
     background: linear-gradient(#E0E7FF, #F9FAFB);
@@ -950,6 +955,10 @@ footer .copyright {
   transform: translateY(0);
 }
 
+.fade-in,
+.about {
+  will-change: opacity, transform;
+}
 
 
 
