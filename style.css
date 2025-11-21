@@ -10,6 +10,7 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
 }
 
 body {
@@ -705,6 +706,11 @@ footer .copyright {
     gap: 1rem;
   }
 
+  body {
+    animation: none;
+    background: linear-gradient(#E0E7FF, #F9FAFB);
+  }
+   
   header {
     font-size: 1.1rem;
   }
@@ -934,6 +940,7 @@ footer .copyright {
   opacity: 1;
   transform: translateY(0);
 }
+
 
 
 
